@@ -21,7 +21,7 @@ router.get('/courses',displayCourses);
 router.post("/course",requireSignin, isInstructor, create);
 router.get("/course/:slug",readCourse)
 
-router.post('/course/video-upload', requireSignin, formidable(), uploadVideo);
+router.post('/course/video-upload', requireSignin, formidable({maxFileSize: 600 * 1024 * 1024}), uploadVideo);
 router.post('/course/remove-image', removeImage)
 router.post('/course/cancel-video', requireSignin, cancelVideo);
 
