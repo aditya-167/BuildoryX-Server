@@ -7,7 +7,7 @@
 
 #### 2. `Course View Page for enrolled users on a course`
 
-![](images/Courseview.png)
+![](images/Coursview.png)
 
 #### 3. `Enrolled Users Course access page`
 
